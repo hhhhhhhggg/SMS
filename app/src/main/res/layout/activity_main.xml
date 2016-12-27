@@ -11,48 +11,49 @@
         android:id="@+id/myViewPager"
         android:layout_width="match_parent"
         android:layout_weight="1"
-        android:layout_height="0dp">
+        android:layout_height="0px">
     </android.support.v4.view.ViewPager>
 
     <RadioGroup
         android:id="@+id/myRadioGroup"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#5f00"
+        android:layout_height="200px"
+        android:background="#ddd"
         android:weightSum="3"
         android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/index"
-            android:layout_width="0dp"
+            android:layout_width="0px"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="首页"
-            android:textSize="10dp"
+            android:text="@string/home"
+            android:textSize="@dimen/textSize"
             android:button="@null"
             android:gravity="center"
-
+            android:drawableTop="@drawable/index_selector"
             />
         <RadioButton
             android:id="@+id/member"
-            android:layout_width="0dp"
+            android:layout_width="0px"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:button="@null"
-            android:text="会员商城"
-            android:textSize="10dp"
+            android:text="@string/shopping_mall"
+            android:textSize="@dimen/textSize"
             android:gravity="center"
-
+            android:drawableTop="@drawable/member_selector"
             />
         <RadioButton
             android:id="@+id/me"
-            android:layout_width="0dp"
+            android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
-            android:text="我的"
-            android:textSize="10sp"
+            android:text="@string/setting"
+            android:textSize="@dimen/textSize"
             android:gravity="center"
+            android:drawableTop="@drawable/me_selector"
 
             />
     </RadioGroup>
