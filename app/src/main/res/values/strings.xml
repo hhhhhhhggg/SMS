@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">MSMS</string>
+
+    <string name="home">首页</string>
+    <string name="shopping_mall">会员商城</string>
+    <string name="setting">我的</string>
+    <string name="classify">分类</string>
+    <string name="terrace_action">平台动态</string>
+    <string name="shopping_car">购物车</string>
+
+
+    <string name="sign">每日签到送积分</string>
+    <string name="issign_1">未签到</string>
+    <string name="issign_2">已签到</string>
+    <string name="indent">我的订单</string>
+    <string name="see_allindent">查看全部订单</string>
+    <string name="see_obligation">待付款</string>
+    <string name="see_overhang">代发货</string>
+    <string name="see_receiving">待收货</string>
+    <string name="see_refund">待退款</string>
+    <string name="manage">管理</string>
+    <string name="manage_shoppingcar">购物车管理</string>
+    <string name="manage_myintegral">我的积分</string>
+    <string name="address_receiving">收货地址</string>
+    <string name="my_store">我的店铺</string>
+
+    <string name="seek_shop">搜索商品名称</string>
+    <string name="seek">搜索</string>
+    <string name="filtrate">筛选</string>
+    <string name="Sort_by_sales">销量排序</string>
+    <string name="Sort_by_sales_0">销量优先</string>
+    <string name="Sort_by_sales_1">价格从高到低</string>
+    <string name="Sort_by_sales_2">价格从低到高</string>
 </resources>
