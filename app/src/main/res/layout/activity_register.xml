@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jfq.msms.login.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/register_rl"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@mipmap/title_bg">
+
+        <ImageView
+            android:layout_width="98px"
+            android:layout_height="98px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:src="@mipmap/icon_back"
+            android:onClick="register_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/register"
+            android:textColor="#ffffff"
+            android:textSize="60px" />
+    </RelativeLayout>
+
+</RelativeLayout>

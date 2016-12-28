@@ -31,12 +31,16 @@
     <string name="Sort_by_sales_0">销量优先</string>
     <string name="Sort_by_sales_1">价格从高到低</string>
     <string name="Sort_by_sales_2">价格从低到高</string>
-    
+
     <string name="login">登录</string>
     <string name="register">注册</string>
     <string name="phone">手机号：</string>
     <string name="password">密码：</string>
+    <string name="passwordtrue">确认密码：</string>
     <string name="nopassword">忘记密码？</string>
+    <string name="forgetpassword">找回密码</string>
+    <string name="verifycode">验证码：</string>
+    <string name="getverifycode">发送验证码</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
