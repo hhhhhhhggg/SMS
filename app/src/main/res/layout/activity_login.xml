@@ -17,8 +17,8 @@
             android:layout_height="98px"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/margin"
-            android:src="@mipmap/icon_back"
-            android:onClick="login_back"/>
+            android:onClick="login_back"
+            android:src="@mipmap/icon_back" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,6 +37,7 @@
         android:layout_margin="@dimen/margin"
         android:background="#e3e3e3"
         android:hint="@string/phone"
+        android:inputType="number"
         android:padding="20px"
         android:textSize="60px" />
 
@@ -60,9 +61,9 @@
         android:layout_below="@id/login_et_password"
         android:layout_margin="@dimen/margin"
         android:gravity="right"
+        android:onClick="forgetpassword"
         android:text="@string/nopassword"
-        android:textSize="40px"
-        android:onClick="forgetpassword"/>
+        android:textSize="40px" />
 
     <TextView
         android:id="@+id/login_tv_login"
@@ -72,11 +73,11 @@
         android:layout_margin="@dimen/margin"
         android:background="#ff0000"
         android:gravity="center"
+        android:onClick="login"
         android:padding="20px"
         android:text="@string/login"
         android:textColor="#ffffff"
-        android:textSize="50px"
-        android:onClick="login"/>
+        android:textSize="50px" />
 
     <TextView
         android:id="@+id/login_tv_register"
@@ -86,11 +87,11 @@
         android:layout_margin="@dimen/margin"
         android:background="#00ff00"
         android:gravity="center"
+        android:onClick="register"
         android:padding="20px"
         android:text="@string/register"
         android:textColor="#ffffff"
-        android:textSize="50px"
-        android:onClick="register"/>
+        android:textSize="50px" />
 
 
 </RelativeLayout>
