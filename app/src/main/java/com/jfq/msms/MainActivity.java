@@ -24,6 +24,7 @@ public class MainActivity extends AutoLayoutActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //AutoLayoutConifg.getInstance().useDeviceSize();
         setContentView(R.layout.activity_main);
         init();
     }

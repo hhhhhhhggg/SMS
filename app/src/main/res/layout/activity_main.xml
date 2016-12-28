@@ -33,6 +33,7 @@
             android:gravity="center"
             android:drawableTop="@drawable/index_selector"
             />
+
         <RadioButton
             android:id="@+id/member"
             android:layout_width="0px"
@@ -44,6 +45,7 @@
             android:gravity="center"
             android:drawableTop="@drawable/member_selector"
             />
+
         <RadioButton
             android:id="@+id/me"
             android:layout_width="0px"

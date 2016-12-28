@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.jfq.msms.R;
 
 /**
+ * 会员商场页面
  * Created by Administrator on 2016.12.27.
  */
 
