@@ -28,6 +28,8 @@ public class URLs {
     public static final String ADD_ADDRESS = "/addressadd";//添加地址
     public static final String SOLID_SHOP = "/authentication";//实体店铺
     public static final String SHOP_INTRODUCTION = "/users_info";//店铺简介
+    public static final String VERIFYCOD = "/Send_code";//得到验证码
+    public static final String CHANGEPASSWORD = "/recoverPass";//修改密码
 
 
     //以下使用购物页面基本地址拼接

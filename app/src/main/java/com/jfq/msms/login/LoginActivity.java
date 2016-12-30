@@ -1,6 +1,7 @@
 package com.jfq.msms.login;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.jfq.msms.MainActivity;
 import com.jfq.msms.R;
 import com.jfq.msms.bean.Loginbean;
 import com.jfq.msms.url.URLs;
@@ -36,12 +38,14 @@ public class LoginActivity extends AutoLayoutActivity {
     private void init() {
         login_et_phone = (EditText) findViewById(R.id.login_et_phone);
         login_et_password = (EditText) findViewById(R.id.login_et_password);
-        sharepreferences = getSharedPreferences("usertoken", Context.MODE_PRIVATE);
+        sharepreferences = getSharedPreferences("user", Context.MODE_PRIVATE);
         editor = sharepreferences.edit();
     }
 
     //忘记密码
     public void forgetpassword(View view) {
+        Intent intent = new Intent(this,ForgetpasswordActivity.class);
+        startActivity(intent);
     }
 
     //登录
@@ -67,7 +71,12 @@ public class LoginActivity extends AutoLayoutActivity {
                                 editor.putString("token",loginbean.getData().getToken());
                                 editor.putString("user",login_et_phone.getText().toString());
                                 editor.putString("password",login_et_password.getText().toString());
+                                editor.putString("id",loginbean.getData().getId());
+                                editor.commit();
                                 Log.i("xxx","======"+loginbean.getData().getToken());
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(intent);
+                                finish();
                             }else {
                                 Toast.makeText(LoginActivity.this, "登录失败", Toast.LENGTH_SHORT).show();
                             }
