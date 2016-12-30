@@ -14,6 +14,7 @@ import com.jfq.msms.MainActivity;
 import com.jfq.msms.R;
 import com.jfq.msms.bean.Loginbean;
 import com.jfq.msms.url.URLs;
+import com.jfq.msms.utils.MessageIsTrue;
 import com.zhy.autolayout.AutoLayoutActivity;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
@@ -63,22 +64,33 @@ public class LoginActivity extends AutoLayoutActivity {
 
                     @Override
                     public void onResponse(Call call, String s) {
-                        if(s!= null){
+                        if(s!= null){//有返回数据解析
                             Gson g = new Gson();
                             Loginbean loginbean = g.fromJson(s,Loginbean.class);
-                            if(loginbean.getFlag().equals("3")){
-                                Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
+                            if(loginbean.getFlag().equals("3")&& null != login_et_phone.getText().toString()){//返回值为3，并且有账号情况下为登录成功
+                                Toast.makeText(LoginActivity.this, loginbean.getMsg(), Toast.LENGTH_SHORT).show();//吐司返回信息
+                                /**
+                                 * 记录获取到的账号，密码，密令
+                                 */
                                 editor.putString("token",loginbean.getData().getToken());
                                 editor.putString("user",login_et_phone.getText().toString());
                                 editor.putString("password",login_et_password.getText().toString());
                                 editor.putString("id",loginbean.getData().getId());
                                 editor.commit();
-                                Log.i("xxx","======"+loginbean.getData().getToken());
+
+                                //登录成功跳转到主页
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(intent);
                                 finish();
-                            }else {
-                                Toast.makeText(LoginActivity.this, "登录失败", Toast.LENGTH_SHORT).show();
+
+                            }else if(null == login_et_phone.getText().toString()){//没有输入账号的情况
+                                Toast.makeText(LoginActivity.this, "请输入手机号", Toast.LENGTH_SHORT).show();
+                            }else if(!MessageIsTrue.phone(login_et_phone.getText().toString())){//账号格式出错
+                                Toast.makeText(LoginActivity.this, "请输入正确的手机号", Toast.LENGTH_SHORT).show();
+                            }else if (MessageIsTrue.phone(login_et_phone.getText().toString()) && null == login_et_password.getText().toString()){//没有输入密码
+                                Toast.makeText(LoginActivity.this, "请输入密码", Toast.LENGTH_SHORT).show();
+                            } else{
+                                Toast.makeText(LoginActivity.this, loginbean.getMsg(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     }

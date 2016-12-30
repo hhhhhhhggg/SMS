@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e3e3e3"
+    android:background="@drawable/lansetiankongweimei1"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -76,13 +76,13 @@
             android:layout_centerVertical="true"
             android:layout_margin="@dimen/margin"
             android:background="@drawable/signin_view"
-            android:paddingBottom="16px"
-            android:paddingLeft="32px"
-            android:paddingRight="32px"
-            android:paddingTop="16px"
+            android:paddingBottom="32px"
+            android:paddingLeft="64px"
+            android:paddingRight="64px"
+            android:paddingTop="32px"
             android:text="签到"
             android:textColor="#ffffff"
-            android:textSize="40px" />
+            android:textSize="50px" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -92,11 +92,12 @@
         android:background="#ffffff">
 
         <TextView
+            android:id="@+id/myself_tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_margin="@dimen/margin"
-            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawablePadding="16px"
             android:gravity="center"
             android:text="我的订单"
             android:textSize="50px" />
@@ -107,7 +108,8 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_margin="@dimen/margin"
-            android:drawableRight="@mipmap/ic_launcher"
+            android:drawablePadding="24px"
+            android:drawableRight="@drawable/myb"
             android:gravity="center"
             android:text="查看全部订单"
             android:textSize="40px" />
@@ -120,34 +122,38 @@
         android:weightSum="4">
 
         <TextView
+            android:id="@+id/myself_tv2"
             android:layout_width="0px"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="16px"
             android:gravity="center"
             android:text="待付款" />
 
         <TextView
+            android:id="@+id/myself_tv3"
             android:layout_width="0px"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="16px"
             android:gravity="center"
             android:text="待发货" />
 
         <TextView
+            android:id="@+id/myself_tv4"
             android:layout_width="0px"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="16px"
             android:gravity="center"
             android:text="待收货" />
 
         <TextView
+            android:id="@+id/myself_tv5"
             android:layout_width="0px"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="16px"
             android:gravity="center"
             android:text="待退款" />
     </LinearLayout>
@@ -170,18 +176,20 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"
-            android:layout_marginTop="16px">
+            android:layout_marginTop="16px"
+            android:layout_weight="1">
 
             <TextView
+                android:id="@+id/myself_tv6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/margin"
-                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="32px"
                 android:gravity="center"
-                android:text="我的订单"
-                android:textSize="45px" />
+                android:text="购物车管理"
+                android:textColor="#ffffff"
+                android:textSize="50px" />
 
             <TextView
                 android:id="@+id/personage_manage1"
@@ -190,27 +198,31 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/margin"
-                android:drawableRight="@mipmap/ic_launcher"
+                android:drawablePadding="24px"
+                android:drawableRight="@drawable/myb"
                 android:gravity="center"
                 android:text="查看全部订单"
-                android:textSize="40px" />
+                android:textColor="#ffffff"
+                android:textSize="50px" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"
-            android:layout_marginTop="16px">
+            android:layout_marginTop="16px"
+            android:layout_weight="1">
 
             <TextView
+                android:id="@+id/myself_tv7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/margin"
-                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="32px"
                 android:gravity="center"
-                android:text="我的订单"
-                android:textSize="45px" />
+                android:text="我的积分"
+                android:textColor="#ffffff"
+                android:textSize="50px" />
 
             <TextView
                 android:id="@+id/personage_manage2"
@@ -219,27 +231,31 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/margin"
-                android:drawableRight="@mipmap/ic_launcher"
+                android:drawablePadding="24px"
+                android:drawableRight="@drawable/myb"
                 android:gravity="center"
                 android:text="查看全部订单"
-                android:textSize="40px" />
+                android:textColor="#ffffff"
+                android:textSize="50px" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"
-            android:layout_marginTop="16px">
+            android:layout_marginTop="16px"
+            android:layout_weight="1">
 
             <TextView
+                android:id="@+id/myself_tv8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/margin"
-                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="32px"
                 android:gravity="center"
-                android:text="我的订单"
-                android:textSize="45px" />
+                android:text="收货地址"
+                android:textColor="#ffffff"
+                android:textSize="50px" />
 
             <TextView
                 android:id="@+id/personage_manage3"
@@ -248,10 +264,12 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="@dimen/margin"
-                android:drawableRight="@mipmap/ic_launcher"
+                android:drawablePadding="24px"
+                android:drawableRight="@drawable/myb"
                 android:gravity="center"
                 android:text="查看全部订单"
-                android:textSize="40px" />
+                android:textColor="#ffffff"
+                android:textSize="50px" />
         </RelativeLayout>
     </LinearLayout>
 

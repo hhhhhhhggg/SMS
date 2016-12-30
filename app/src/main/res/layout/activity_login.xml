@@ -4,6 +4,7 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lansetiankongweimei1"
     tools:context="com.jfq.msms.login.LoginActivity">
 
     <RelativeLayout
@@ -37,8 +38,9 @@
         android:layout_margin="@dimen/margin"
         android:background="#e3e3e3"
         android:hint="@string/phone"
+        android:maxLength="11"
         android:inputType="number"
-        android:padding="20px"
+        android:padding="40px"
         android:textSize="60px" />
 
     <EditText
@@ -48,9 +50,10 @@
         android:layout_below="@id/login_et_phone"
         android:layout_margin="@dimen/margin"
         android:background="#e3e3e3"
+        android:maxLength="16"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:padding="20px"
+        android:padding="40px"
         android:textSize="60px" />
 
     <TextView
@@ -74,7 +77,7 @@
         android:background="#ff0000"
         android:gravity="center"
         android:onClick="login"
-        android:padding="20px"
+        android:padding="30px"
         android:text="@string/login"
         android:textColor="#ffffff"
         android:textSize="50px" />
@@ -88,7 +91,7 @@
         android:background="#00ff00"
         android:gravity="center"
         android:onClick="register"
-        android:padding="20px"
+        android:padding="30px"
         android:text="@string/register"
         android:textColor="#ffffff"
         android:textSize="50px" />
