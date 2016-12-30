@@ -15,14 +15,14 @@ import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.jfq.msms.R;
 import com.jfq.msms.adapter.MyAdAdapter;
 import com.jfq.msms.bean.Adbean;
-import com.zhy.http.okhttp.OkHttpUtils;
 import com.jfq.msms.utils.GsonCallback;
+import com.zhy.http.okhttp.OkHttpUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager;
 import okhttp3.Call;
-import okhttp3.Response;
 
 public class Fragment1 extends Fragment {
     AutoScrollViewPager autoScrollViewPager;

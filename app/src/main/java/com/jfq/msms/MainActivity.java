@@ -26,6 +26,7 @@ public class MainActivity extends AutoLayoutActivity {
         super.onCreate(savedInstanceState);
         //AutoLayoutConifg.getInstance().useDeviceSize();
         setContentView(R.layout.activity_main);
+
         init();
     }
 
@@ -42,7 +43,6 @@ public class MainActivity extends AutoLayoutActivity {
         setRadiuButton();
          //viewpager的适配器
          setViewPagerAdapter();
-
     }
 
     /**

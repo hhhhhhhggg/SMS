@@ -2,24 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9fd"
     android:orientation="vertical"
     >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/colorBar">
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/my_recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:divider="@null"
+       android:dividerHeight="0dp"
+       android:fadingEdge="none"
+       android:overScrollMode="never"
+       android:scrollbars="none"
+       android:padding="10dp"
+       >
+   </android.support.v7.widget.RecyclerView>
 
-        <TextView
-            android:id="@+id/tv_index"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="会员商城"
-            android:textSize="@dimen/textSizebig"
-            android:layout_centerInParent="true"
-            android:gravity="center"
-            />
-    </RelativeLayout>
-
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/my_SwipRefreshLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>

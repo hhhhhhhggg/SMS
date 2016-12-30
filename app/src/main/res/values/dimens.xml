@@ -5,4 +5,5 @@
     <dimen name="textSize">30px</dimen>
     <dimen name="margin">32px</dimen>
     <dimen name="textSizebig">60px</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
