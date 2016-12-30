@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--分割线条-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/font_black_5"/>
+
+    <!--标题栏目-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <!--分类栏目-->
+        <LinearLayout
+            android:id="@+id/category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/title_item_clicked"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_category_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="分类"
+                android:textColor="@color/font_black_2"
+                android:textSize="13sp"/>
+            <ImageView
+                android:id="@+id/iv_category_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/down"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/font_black_5"/>
+
+
+        <!--排序栏目-->
+        <LinearLayout
+            android:id="@+id/sort"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@drawable/title_item_clicked"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排序"
+                android:textSize="13sp"
+                android:textColor="@color/font_black_2"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/down"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/font_black_5"/>
+
+        <!--筛选栏目-->
+        <LinearLayout
+            android:id="@+id/select"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@drawable/title_item_clicked"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="筛选"
+                android:textColor="@color/font_black_2"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/down"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/font_black_5"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/half_transparent"/>
+
+        <!--下拉部分的-->
+        <LinearLayout
+            android:id="@+id/all_listView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+
+            <!--左边的listview-->
+            <ListView
+                android:id="@+id/top_left"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@color/font_black_6"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none"
+                android:visibility="gone"/>
+            <!--右边的listview-->
+            <ListView
+                android:id="@+id/top_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none"
+                android:visibility="gone"
+                ></ListView>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <!--加入购物车按钮-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mPoint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+</LinearLayout>
