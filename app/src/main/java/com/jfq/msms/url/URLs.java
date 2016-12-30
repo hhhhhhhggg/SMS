@@ -10,7 +10,7 @@ public class URLs {
      * 拼接方式：基本地址+类型基本地址+具体内容
      */
 
-    public static final String BASE_URL = "http://www.ysapp.cn/jifenqian";//基本地址
+    public static final String BASE_URL = "http://www.ysapp.cn/jifenqian/api.php";//基本地址
 
 
     //类型基本地址
@@ -28,6 +28,8 @@ public class URLs {
     public static final String ADD_ADDRESS = "/addressadd";//添加地址
     public static final String SOLID_SHOP = "/authentication";//实体店铺
     public static final String SHOP_INTRODUCTION = "/users_info";//店铺简介
+    public static final String VERIFYCOD = "/Send_code";//得到验证码
+    public static final String CHANGEPASSWORD = "/recoverPass";//修改密码
 
 
     //以下使用购物页面基本地址拼接

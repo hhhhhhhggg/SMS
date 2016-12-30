@@ -6,6 +6,92 @@
     android:layout_height="match_parent"
     tools:context="com.jfq.msms.login.LoginActivity">
 
+    <RelativeLayout
+        android:id="@+id/login_rl"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@mipmap/title_bg">
+
+        <ImageView
+            android:layout_width="98px"
+            android:layout_height="98px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin"
+            android:onClick="login_back"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:textSize="60px" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_rl"
+        android:layout_margin="@dimen/margin"
+        android:background="#e3e3e3"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:padding="20px"
+        android:textSize="60px" />
+
+    <EditText
+        android:id="@+id/login_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_et_phone"
+        android:layout_margin="@dimen/margin"
+        android:background="#e3e3e3"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="20px"
+        android:textSize="60px" />
+
+    <TextView
+        android:id="@+id/login_tv_nopassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login_et_password"
+        android:layout_margin="@dimen/margin"
+        android:gravity="right"
+        android:onClick="forgetpassword"
+        android:text="@string/nopassword"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/login_tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_tv_nopassword"
+        android:layout_margin="@dimen/margin"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:onClick="login"
+        android:padding="20px"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/login_tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_tv_login"
+        android:layout_margin="@dimen/margin"
+        android:background="#00ff00"
+        android:gravity="center"
+        android:onClick="register"
+        android:padding="20px"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        android:textSize="50px" />
 
 
 </RelativeLayout>
